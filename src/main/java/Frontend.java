@@ -11,7 +11,8 @@ public class Frontend extends HttpServlet {
                       HttpServletResponse response) throws IOException {
         System.out.println("MyServlet is opened");  // print in console
         response.getWriter().println("MyServlet say to you Hello!");    //print on the page
-        response.getWriter().println("You typed such name =" + request.getParameter("name"));
+        response.getWriter().println("You typed such name =" + request.getParameter("name")+ "\n" +
+                                    "URL : " + request.getRequestURL());
 
 
     }
